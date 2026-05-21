@@ -10,11 +10,20 @@
     "dev": "npx tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["http", "server", "typescript", "nodejs"],
+  "keywords": [
+    "http",
+    "server",
+    "typescript",
+    "nodejs"
+  ],
   "author": "Alex Mancilla",
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^25.9.1",
     "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }

@@ -5,9 +5,6 @@ A minimal HTTP server implementation in TypeScript without any framework depende
 ## Features
 
 - Pure TypeScript implementation
-- Zero framework dependencies
-- Lightweight and performant
-- Easy to understand and extend
 - ES modules support
 
 ## Prerequisites
@@ -24,18 +21,19 @@ We recommend using [NVM](https://github.com/nvm-sh/nvm) to manage Node.js versio
 ### Setup
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd ts-http-server
    ```
-
 2. Install Node.js version specified in `.nvmrc`:
+
    ```bash
    nvm install
    nvm use
    ```
-
 3. Install dependencies:
+
    ```bash
    npm install
    ```
@@ -90,10 +88,17 @@ The server will start and listen on the configured port.
 
 ## Project Structure
 
+## Dependencies
 
-## Development Dependencies
+### Production
 
+- **express**: ^5.2.1 - Fast, unopinionated web framework for Node.js
 
+### Development
+
+- **typescript**: ^6.0.3 - TypeScript compiler
+- **@types/node**: ^25.9.1 - Type definitions for Node.js
+- **@types/express**: ^5.0.6 - Type definitions for Express.js
 
 ## License
 
