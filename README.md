@@ -5,11 +5,15 @@ A minimal HTTP server implementation in TypeScript without any framework depende
 ## Features
 
 - Pure TypeScript implementation
-
+- Zero framework dependencies
+- Lightweight and performant
+- Easy to understand and extend
+- ES modules support
 
 ## Prerequisites
 
 - Node.js 22.14.0 or higher
+- npm 10.0.0 or higher
 
 ## Installation
 
@@ -17,34 +21,79 @@ A minimal HTTP server implementation in TypeScript without any framework depende
 
 We recommend using [NVM](https://github.com/nvm-sh/nvm) to manage Node.js versions. If you don't have NVM installed, follow the [installation guide](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-Once NVM is installed, the `.nvmrc` file in this project will specify the correct Node.js version.
-
 ### Setup
 
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd ts-http-server
+   ```
+
 2. Install Node.js version specified in `.nvmrc`:
    ```bash
    nvm install
    nvm use
    ```
+
 3. Install dependencies:
    ```bash
    npm install
    ```
 
+## Configuration
+
+### TypeScript Setup
+
+This project uses TypeScript with strict type checking enabled. The configuration is defined in `tsconfig.json`:
+
+- **target**: esnext - Targets the latest JavaScript features
+- **module**: nodenext - Uses the latest Node.js module system
+- **rootDir**: ./src - Source files are located in the `src` directory
+- **outDir**: ./dist - Compiled JavaScript files are generated in the `dist` directory
+- **strict**: true - Enables all strict type checking options
+- **esModuleInterop**: true - Allows ES module syntax compatibility
+
+### Package Configuration
+
+The `package.json` includes:
+
+- **type**: "module" - Enables ES module syntax (`import`/`export`)
+- **build**: Compiles TypeScript to JavaScript
+- **start**: Runs the compiled server
+- **dev**: Builds and runs the server in one command
+
 ## Usage
+
+### Development Mode
+
+For development, use the `dev` script which compiles TypeScript and starts the server:
+
+```bash
+npm run dev
+```
+
+### Production Mode
+
+First, build the project:
+
+```bash
+npm run build
+```
+
+Then start the server:
 
 ```bash
 npm start
 ```
 
-The server will start on the default port (typically 3000).
+The server will start and listen on the configured port.
 
-## Development
+## Project Structure
 
-```bash
-npm run dev
-```
+
+## Development Dependencies
+
+
 
 ## License
 
