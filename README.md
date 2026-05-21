@@ -1,10 +1,10 @@
 # ts-http-server
 
-A minimal HTTP server implementation in TypeScript without any framework dependencies. Built for learning and as a foundation for custom server applications.
+A modern HTTP server built with TypeScript.
 
 ## Features
 
-- Pure TypeScript implementation
+- TypeScript 
 - ES modules support
 
 ## Prerequisites
